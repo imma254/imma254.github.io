@@ -9,6 +9,12 @@
         <!-- fontawesome icons -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
+        <!-- jquery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <style type="text/css">
+
+        </style>
 
     </head>
 
@@ -18,10 +24,8 @@
                 <div class="logo">
                     <a href="index.html"><img src="images/logo.png"></a> 
                 </div>
-                <div class="user_action">
-                    
-                    <ul class="user_btns">
-                        
+                <div class="user_action">                    
+                    <ul class="user_btns">                        
                         <li><a href="login.html" class="user"><i class="fa fa-sign-in-alt"></i> Login</a></li>
                         <li><a href="signup.html" class="user"><i class="fas fa-user-plus"></i> Sign Up</a></li>
                         <li><a href="u_account.html" class="user"><i class="fas fa-user"></i> Profile</a></li>
@@ -40,10 +44,12 @@
             </section>
 
             <section class="right">
-                <form id="search-form_3">
-                    <input type="text" class="search_3"/>
-                    <input type="submit" class="submit_3" value="Search" />
-                </form>
+                <div class="search">
+                    <form class="search-form">
+                        <input type="text" placeholder="Search ..">
+                        <input type="submit" value="Submit">
+                    </form>
+                </div>
                 <h4>Recent Questions</h4>
                     <div id="list">
                         <table>

@@ -9,6 +9,7 @@ input[type=text], input[type=password] {
     display: inline-block;
     border: none;
     background: #f1f1f1;
+    text-align: center;
 }
 
 input[type=text]:focus, input[type=password]:focus {
@@ -37,6 +38,13 @@ button {
 button:hover 
 {
     opacity: 1;
+}
+
+#logo-1
+{
+    border: 1px solid #f8f8f8;
+    border-radius: 5px;
+    box-shadow: 1px 1px #888888;
 }
 
 #login_icon
