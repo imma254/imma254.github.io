@@ -31,18 +31,44 @@ button {
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
+    font-family: Century Gothic;
 }
 
-button:hover {
-    opacity:1;
+button:hover 
+{
+    opacity: 1;
+}
+
+#login_icon
+{
+    margin-top: 20px;
+    font-size: 50px; 
+    color: #aaa;
+}
+
+.remember_checkbox
+{
+    margin-top: 15px;
+}
+
+.terms_link
+{
+    color: dodgerblue;
+}
+
+.forgot_pwd
+{
+    color: dodgerblue;
+    font-style: oblique;
 }
 
 #user_form
 {
     margin: auto;
-    width: 40%;
-    border: 1px solid #aaa;
-    border-radius: 10px;
+    margin-top: 30px;
+    width: 35%;
+    border: .04em solid #ddd;
+    border-radius: 5px;
 }
 
 #form_header
