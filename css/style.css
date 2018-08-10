@@ -343,6 +343,14 @@ hr {
     font-style: oblique;
 }
 
+#user_icon
+{
+    font-size: 60px; 
+    border: 1px solid #ccc; 
+    padding: 20px;  
+    border-radius: 50%;
+}
+
 @media only screen and (max-width:620px) {
     /* for mobile phones: */
     .side_bar 
