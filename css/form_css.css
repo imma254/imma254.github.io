@@ -56,6 +56,12 @@ button:hover
     color: dodgerblue;
 }
 
+.forgot_pwd
+{
+    color: dodgerblue;
+    font-style: oblique;
+}
+
 #user_form
 {
     margin: auto;
