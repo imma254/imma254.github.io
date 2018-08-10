@@ -17,8 +17,14 @@ header
 
 
 
+p
+{
+    font-size: 14px;
+}
 
-
+#list {
+    overflow-x:auto;
+}
 
 #profile
 {
@@ -271,6 +277,12 @@ section
     display: inline-block;
     font-size: 14px;
     font-family: Century Gothic;
+    cursor: pointer;
+    opacity: 0.9;
+}
+.post_btn:hover
+{
+    opacity: 1;
 }
 
 .right
