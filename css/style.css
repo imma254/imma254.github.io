@@ -144,6 +144,7 @@ textarea
 .logo
 {
     float: left;
+    text-align: center;
 }
 
 .logo img
@@ -379,8 +380,8 @@ hr {
     }
     .user_action
     {
-        float: left;
-        text-align: center;
+        float: center;
+        text-align: left;
     }
     .container
     {
