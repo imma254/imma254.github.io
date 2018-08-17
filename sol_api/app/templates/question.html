@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block content %}
+    <section class="side_bar">
+        <div>
+            <form id="post_qstn">
+                <h4>Post your answer</h4>
+                <p>It's quick and easy</p>
+                <textarea rows="2" cols="20" wrap="hard" placeholder="Post your answer here .."></textarea><br>
+                <input type="submit" class="post_btn" name="submit_qstn" value="Post">
+            </form>
+        </div>
+    </section>
+
+    <section class="right">
+        <div class="search">
+            <form class="search-form">
+                <input type="text" placeholder="Search ..">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <h4>Qstn: <span>What is the JavaScript code to validate email?</span> </h4>
+            <div id="list">
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Answers</th>
+                        <th>Answered by:</th>
+                        <th># Votes</th>
+                    </tr>
+                    <tr>
+                        <td class="qstn_code">001</td>
+                        <td width="70%" class="answer">
+                            Any support for use of regex checks for e-mails I am 100% against. I'm tired of being told my e-mail address of "foo+bar@gmail.com" is invalid. The best option is to ask the user to type their e-mail in twice and if you MUST use a regex checker, then tell the user that their e-mail address does not appear to be valid and ask if they are sure they typed it right. Even go so far as to point out WHAT did not check out in the regexp check, but do NOT stop them from submitting the form. 
+                        </td>
+                        <td>
+                            <a href="#">Manu</a>
+                            <span class="qstns">: Mar 15 '18 at 16:21</span>
+                        </td>
+                        <td>50</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="qstn_code">004</td>
+                        <td class="answer">
+                            please get this right, too many website don't like my email address of "firstName@secondName.name", not all top level domains end it 2 or 3 letters.
+                        </td>
+                        <td class="qstn_code">
+                            <a href="#">Crimsoft</a>
+                            <span class="qstns">: Mar 15 '18 at 18:21</span>
+                        </td>
+                        <td>44</td>
+                    </tr>
+                    
+                    <tr>
+                        <td class="qstn_code">014</td>
+                        <td class="answer">
+                            Any support for use of regex checks for e-mails I am 100% against. I'm tired of being told my e-mail address of "foo+bar@gmail.com" is invalid. The best option is to ask the user to type their e-mail in twice and if you MUST use a regex checker, then tell the user that their e-mail address does not appear to be valid and ask if they are sure they typed it right. Even go so far as to point out WHAT did not check out in the regexp check, but do NOT stop them from submitting the form. – Soundfx4 Mar 15 '16 at 16:21
+                        </td>
+                        <td><a href="#">Voke</a><span class="qstns">: Mar 15 '18 at 18:21</span></td>
+                        <td>94</td>
+                    </tr>
+                </table>
+            </div>
+    </section>
+{% endblock %}

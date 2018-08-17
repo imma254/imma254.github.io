@@ -1,0 +1,238 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<!-- fontawesome icons -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+        <!-- jquery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- custom css -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css')}}">  
+
+<div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="{{ url_for('static', filename='img/slider/1.jpg') }}">
+                  <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="{{ url_for('static', filename='img/slider/2.png') }}">
+                  <div class="text"></div>
+                </div>
+
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="{{ url_for('static', filename='img/slider/7.jpg') }}">
+                  <div class="text"></div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            </div>
+                <br>
+
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+            </div>
+
+<section class="side_bar">
+    <div>
+        <h4>Post a Question</h4>
+        <p>It's quick and easy</p>
+        <button type="button" class="post_btn"><i class="fa fa-plus"></i> Ask Question</button>
+    </div>
+</section>
+
+<section class="right">
+    <div class="search">
+        <form class="search-form">
+            <input type="text" placeholder="Search ..">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+    <h4>Recent Questions</h4>
+        <div id="list">
+            <table>
+                <tr>
+                    <th>#</th>
+                    <th></th>
+                    <th># Topic</th>
+                    <th># Votes</th>
+                </tr>
+                <tr>
+                    <td class="qstn_code">001</td>
+                    <td width="70%">
+                        <a href="{{ url_for('question') }}">VBA MsgBox pop-up according to cell value</a>
+                    </td>
+                    <td>9</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">002</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">Method order resolving in multiple and multilevel inheritance in python while calling the constructor.</a>
+                    </td>
+                    <td>12</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">003</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">organizing android + firebase project for dev staging production</a>
+                    </td>
+                    <td>15</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">004</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">Method order resolving in multiple and multilevel inheritance in python while calling the constructor.</a>
+                    </td>
+                    <td>12</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">005</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">organizing android + firebase project for dev staging production</a>
+                    </td>
+                    <td>15</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">006</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">Method order resolving in multiple and multilevel inheritance in python while calling the constructor.</a>
+                    </td>
+                    <td>12</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">007</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">organizing android + firebase project for dev staging production</a>
+                    </td>
+                    <td>15</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">008</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">Method order resolving in multiple and multilevel inheritance in python while calling the constructor.</a>
+                    </td>
+                    <td>12</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">009</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">organizing android + firebase project for dev staging production</a>
+                    </td>
+                    <td>15</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">010</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">Method order resolving in multiple and multilevel inheritance in python while calling the constructor.</a>
+                    </td>
+                    <td>12</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">011</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">organizing android + firebase project for dev staging production</a>
+                    </td>
+                    <td>15</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">012</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">Method order resolving in multiple and multilevel inheritance in python while calling the constructor.</a>
+                    </td>
+                    <td>12</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">013</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">organizing android + firebase project for dev staging production</a>
+                    </td>
+                    <td>15</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">014</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">Method order resolving in multiple and multilevel inheritance in python while calling the constructor.</a>
+                    </td>
+                    <td>12</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">015</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">organizing android + firebase project for dev staging production</a>
+                    </td>
+                    <td>15</td>
+                    <td>67</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">016</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">Method order resolving in multiple and multilevel inheritance in python while calling the constructor.</a>
+                    </td>
+                    <td>12</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td class="qstn_code">017</td>
+                    <td>
+                        <a href="{{ url_for('question') }}">organizing android + firebase project for dev staging production</a>
+                    </td>
+                    <td>15</td>
+                    <td>67</td>
+                </tr>
+            </table>
+        </div>
+</section>
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+</script>
+{% endblock %}
+                      
